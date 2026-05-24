@@ -7,7 +7,7 @@
 ##	Setup
 >	Install Python
 >	Install Pip
->	Install CMake
+>	Install Make either by msys64, on wsl, or Linux environment
 1.	Create * Activate Environment:
 	-	`python -m venv .venv`
 	-	`.venv\Scripts\activate.bat`
@@ -15,10 +15,10 @@
 	-	`pip install -r requirements.txt`
 3.	Run (in root directory):
 	-	`make`
+	+	Or Run using Python if can't install Make:
+	-	`python app/main.py`
 
-
-
-####	Referebces
+####	References
 
 +	Dystopian Dev (2023), "Audio Spectogram - Python + OpenGL + ...". Nov 4, 2024 [Youtube]. Available at: https://youtu.be/uapmmpA1wMk?si=r2DQDGFk_T4dbRwE. (Last Accessed: 18-05-2026)
 
