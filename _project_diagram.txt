@@ -1,0 +1,24 @@
+AudioSpectogram-Pypy_OpenGL/
+ ├── res/
+ │	├── scooby.wav
+ │	└── scooby.mp3
+ ├── requirements.txt
+ ├── README.md
+ ├── Makefile
+ ├── LICENSE
+ ├── fonts/
+ │	├── Rubik-Regular.ttf
+ │	└── Agbalumo,Atomic_Age,Baumans,Cambo,EB_Garamond,etc.zip
+ ├── app/
+ │	├── window.py
+ │	├── wave.py
+ │	├── utils.py
+ │	├── ticks.py
+ │	├── text.py
+ │	├── spec.py
+ │	├── source.py
+ │	├── rect.py
+ │	├── main.py
+ │	└── config.py
+ ├── .pddignore
+ └── .gitignore

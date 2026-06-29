@@ -1,10 +1,28 @@
 ####	Date: 18-05-2026
 
-##	Audio Spectogram - OpenGL, Python, PyAudio
+#	Audio Spectogram - OpenGL, Python, PyAudio
+
+Visualizing an `.wav` audio file's data in its time domain and frequency domain, and implementing a realtime audio data visualization of audio data recorded straight from the microphone.
+
+### Github Repo:
+[`Git Repo`](https://github.com/OnyebuchiDeji/AudioSpectogram-Pypy_OpenGL)
 
 
+###	Key Features
 
-##	Setup
++	Utilized pyaudio to read `wav` files and read them as a stream of data to extract time-domain data.
++	Utilized PyQT for window creation and Moderngl capabilities..
++	Utilized Short Fourier Transform to separate `wav` audio samples into frequency bands (frequency domain of data).
++	Utliized Moderngl shaders to write to GPU and visualize time domain and frequency domain.
++	Performs in Realtime using callback architecture by library, pyaudio to stream data directly from microphone.
+
+
+###	Tech Stack
+
++	PyQT, Moderngl, Pyaudio, Librosa (for fourier transform functions), Pyrr (for Matrix functions)
+
+
+##	Setup Instructions
 >	Install Python
 >	Install Pip
 >	Install Make either by msys64, on wsl, or Linux environment
@@ -23,7 +41,36 @@
 +	Dystopian Dev (2023), "Audio Spectogram - Python + OpenGL + ...". Nov 4, 2024 [Youtube]. Available at: https://youtu.be/uapmmpA1wMk?si=r2DQDGFk_T4dbRwE. (Last Accessed: 18-05-2026)
 
 
-####	Screenshots
+### Architecture Diagram
+
+```
+AudioSpectogram-Pypy_OpenGL/
+ ├── res/
+ │	├── scooby.wav
+ │	└── scooby.mp3
+ ├── requirements.txt
+ ├── README.md
+ ├── Makefile
+ ├── LICENSE
+ ├── fonts/
+ │	├── Rubik-Regular.ttf
+ │	└── Agbalumo,Atomic_Age,Baumans,Cambo,EB_Garamond,etc.zip
+ ├── app/
+ │	├── window.py
+ │	├── wave.py
+ │	├── utils.py
+ │	├── ticks.py
+ │	├── text.py
+ │	├── spec.py
+ │	├── source.py
+ │	├── rect.py
+ │	├── main.py
+ │	└── config.py
+ ├── .pddignore
+ └── .gitignore
+```
+
+###	Screenshots
 
 ![image0](./_scrnshots/scrnshot0.png)
 ![image1](./_scrnshots/scrnshot1.png)
