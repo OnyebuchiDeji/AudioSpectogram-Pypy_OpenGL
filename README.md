@@ -26,7 +26,7 @@ Visualizing an `.wav` audio file's data in its time domain and frequency domain,
 >	Install Python
 >	Install Pip
 >	Install Make either by msys64, on wsl, or Linux environment
-1.	Create * Activate Environment:
+1.	Create & Activate Environment:
 	-	`python -m venv .venv`
 	-	`.venv\Scripts\activate.bat`
 2.	Install Dependencies:
