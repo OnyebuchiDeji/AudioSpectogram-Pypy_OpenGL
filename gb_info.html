@@ -1,0 +1,50 @@
+<project_title>Audio Spectogram - OpenGL, Python, PyAudio by  Ebenezer Ayo, Khaylemsoft</project_title>
+
+<short_description>
+Visualizing an <code>.wav</code> audio file's data in its time domain and frequency domain, and implementing a realtime audio data visualization of audio data recorded straight from the microphone.
+</short_description>
+
+###  Live Demo Here:
+<live_link></live_link>
+
+<github_link>https://github.com/OnyebuchiDeji/AudioSpectogram-Pypy_OpenGL</github_link>
+
+<references>
+<ul>
+<li>Dystopian Dev (2023), "Audio Spectogram - Python + OpenGL + ...". Nov 4, 2024 [Youtube]. Available at: https://youtu.be/uapmmpA1wMk?si=r2DQDGFk_T4dbRwE. (Last Accessed: 18-05-2026)</li>
+</ul>
+</references>
+
+
+<long_description>
+<h3>Key Features</h3>
+<ul>
+<li>Utilized pyaudio to read <code>wav</code> files and read them as a stream of data to extract time-domain data.</li>
+<li>Utilized PyQT for window creation and Moderngl capabilities..</li>
+<li>Utilized Short Fourier Transform to separate <code>wav</code> audio samples into frequency bands (frequency domain of data).</li>
+<li>Utliized Moderngl shaders to write to GPU and visualize time domain and frequency domain.</li>
+<li>Performs in Realtime using callback architecture by library, pyaudio to stream data directly from microphone.</li>
+</ul>
+<h3>Tech Stack</h3>
+<ul>
+<li>PyQT, Moderngl, Pyaudio, Librosa (for fourier transform functions), Pyrr (for Matrix functions)</li>
+</ul>
+<h2>Setup Instructions</h2>
+<blockquote>
+<p>Install Python
+  Install Pip
+  Install Make either by msys64, on wsl, or Linux environment
+1.  Create &amp; Activate Environment:
+    -   <code>python -m venv .venv</code>
+    -   <code>.venv\Scripts\activate.bat</code>
+2.  Install Dependencies:
+    -   <code>pip install -r requirements.txt</code>
+3.  Run (in root directory):
+    -   <code>make</code>
+    +   Or Run using Python if can't install Make:
+    -   <code>python app/main.py</code></p>
+</blockquote>
+
+</long_description>
+
+<features>desktop app, audio programming, python, pyqt5, signal processing, fast fourier transform, fft</features>
